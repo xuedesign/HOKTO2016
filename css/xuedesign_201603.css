@@ -1,0 +1,229 @@
+/********************************************
+*
+* @project    HOKUTO 2016 EDM
+* @Author     Elmo Wu <elmo@xuedesign.tw>
+* @copyright  2016 xuedesign studio
+* @version    1.0 - 201603
+*********************************************/
+
+body{
+	background:#009944;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:22px;
+	color:#2b2b2b}
+a:link {text-decoration:none; color:#006bab}
+a:visited {text-decoration:none; color:#666}
+a:hover {text-decoration:underline; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+#wrap{ 
+   display:block;
+   position: relative;
+   width:1280px; 
+   margin:0 auto}
+#box_01,#box_02, #box_03, #box_04, #box_05, #box_06{
+    display: block;
+    width: 1280px}
+#box_01{
+    height:484px;
+    background: url(../images/edm_01.png) no-repeat}
+#box_02{
+    height:323px;
+    background: url(../images/edm_02.jpg) no-repeat}
+#box_03{
+    height:478px;
+    background: url(../images/edm_03.png) no-repeat}
+#box_04{
+    height:252px;
+    background: url(../images/edm_04.jpg) no-repeat}
+#box_05{
+    height:231px;
+    background: url(../images/edm_05.jpg) no-repeat}
+#box_06{
+    height:147px;
+    background: url(../images/edm_06.jpg) no-repeat}
+h1{
+    display: block;
+    position: absolute;
+    top:64px;
+    left:368px;
+    z-index: 10;
+    width: 546px;
+    height: 195px;
+    background: url(../images/pic_logo.png) no-repeat;
+    text-indent: -9999px}
+h2{display: block;
+    position: absolute;
+    top:161px;
+    left:150px;
+    width: 1050px;
+    height: 330px;
+    background: url(../images/pic_title.gif) no-repeat; 
+    text-indent: -9999px}
+.btn_01, .btn_02, .btn_03, .btn_04{
+    display: block;
+    position: absolute;
+    /*background: #111;*/
+    text-indent: -9999px}
+.btn_01{
+    top:32px;
+    right:23px;
+    width: 270px;
+    height: 124px}
+.btn_02{
+    bottom:60px;
+    left:117px;
+    width: 355px;
+    height: 32px}
+.btn_03{
+    bottom:36px;
+    left:485px;
+    width: 445px;
+    height: 124px}
+.btn_04{
+    bottom:36px;
+    right:48px;
+    width: 298px;
+    height: 62px}
+.btn_note{
+    display: block;
+    position: absolute;
+    top:1469px;
+    left:442px;
+    width: 200px;
+    height: 60px;
+    background: url(../images/btn_note.gif) no-repeat}
+#box_note{
+    display:none;
+    width: 860px;
+    background: #429803;
+    padding: 10px 30px}
+#box_note p{
+    font-size:1.8em;
+    line-height:1.5em;
+    color: #fff;
+    padding: 10px 0 0 33px;
+    vertical-align: middle}
+#box_note ol{
+    display:block;
+    padding: 20px 50px}
+#box_note li{
+    list-style: decimal;
+    font-size: .938em;
+    line-height:1.5em;
+    color: #fff;
+    padding-bottom: 15px}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s}
+
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn-01 {
+  -webkit-animation-delay:1s;
+	animation-delay:1s;	
+   -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+	animation-duration: 1s;		    
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn}
+
+.bounceIn-02 {
+ -webkit-animation-delay:2s;
+	animation-delay:2s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	    
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn}
